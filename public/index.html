@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room | Chat App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <h2>Chat App</h2>
+            <p><strong>Room name:</strong> <span id="room-name">General</span></p>
+            <p><strong>Members:</strong></p>
+            <ul id="members-list"></ul>
+            <input type="text" id="roomInput" placeholder="Enter room name...">
+            <button id="joinRoomButton">Join Room</button>
+            <div class="private-chat">
+                <input type="text" id="privateUserInput" placeholder="Enter username to chat privately">
+                <button id="joinPrivateChatButton">Join Private Chat</button>
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2>Chat Room</h2>
+                <button id="leaveRoomButton">Leave Room</button>
+                <button id="logoutButton" class="logout-btn">Logout</button>
+            </div>
+            <div id="chat-box" class="chat-box"></div>
+            <div class="chat-input">                
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        if (!sessionStorage.getItem("username")) {
+            window.location.href = "login.html"; // ✅ Redirect if not logged in
+        }
+    </script>
+
+    <script>
+        // ✅ Logout Functionality
+        document.getElementById("logoutButton").addEventListener("click", () => {
+            sessionStorage.removeItem("username"); // ✅ Remove username from session storage
+            window.location.href = "login.html"; // ✅ Redirect to login page
+        });
+    </script>
+    <script src="js/socket.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F4F9; /* Soft Lavender */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Signup/Login Container */
+.signup-container {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    background-color: #3E5C76; /* Deep Blue Gray */
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+/* Inputs */
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    width: 95%;
+    background-color: #A63446; /* Muted Red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #8C2B3D;
+}
+
+/* Leave and Logout Buttons */
+.leave-btn, .logout-btn {
+    background-color: #577399; /* Blue Gray */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.logout-btn {
+    background-color: #495867;
+}
+
+.leave-btn:hover {
+    background-color: #3E4C59;
+}
+
+.logout-btn:hover {
+    background-color: #323F4B;
+}
+
+/* Chat Container */
+.chat-container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 25%;
+    background: #1C2B2D; /* Dark Slate */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar input {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.sidebar button {
+    padding: 10px;
+    width: 100%;
+    background-color: #A63446;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sidebar button:hover {
+    background-color: #8C2B3D;
+}
+
+/* Chat Area */
+.chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: #3E5C76;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header button {
+    background: #A63446;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #F4F4F9;
+}
+
+/* Chat Input */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+    flex: 4;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chat-input button {
+    flex: 1;
+    padding: 10px;
+    background: #A63446;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #8C2B3D;
+}
+
+/* Timestamp */
+.timestamp {
+    font-size: 12px;
+    color: gray;
+    margin-left: 5px;
+}
+
+/* Private Chat */
+.private-chat {
+    margin-top: 15px;
+}
+
+.private-chat input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.private-chat button {
+    width: 100%;
+    background-color: #577399;
+}
+
+.private-chat button:hover {
+    background-color: #3E5C76;
+}
